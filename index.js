@@ -54,8 +54,8 @@ function updateBookReadStatus(e) {
     let bookList = fetchBookFromLocalStorage();
     let checkBoxId = e.target.id;
 
-    for(let book of bookList) {
-        if(book.bookId == checkBoxId) {
+    for (let book of bookList) {
+        if (book.bookId == checkBoxId) {
             book.isRead = e.target.checked.toString()
         }
     }
